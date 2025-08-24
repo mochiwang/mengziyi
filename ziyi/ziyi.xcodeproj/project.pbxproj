@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7BC9BF02E559AAA004462A0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC9BEF2E559AAA004462A0 /* APIClient.swift */; };
+		B7BC9BF22E559AE8004462A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7BC9BF12E559AE8004462A0 /* Assets.xcassets */; };
+		B7BC9BF42E559AF4004462A0 /* ClassModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC9BF32E559AF4004462A0 /* ClassModeView.swift */; };
+		B7BC9BF62E559B01004462A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC9BF52E559B01004462A0 /* ContentView.swift */; };
+		B7BC9BF82E559B0B004462A0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC9BF72E559B0B004462A0 /* Models.swift */; };
+		B7BC9BFA2E559B15004462A0 /* NotesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC9BF92E559B15004462A0 /* NotesAPI.swift */; };
+		B7BC9BFC2E559B1E004462A0 /* RecorderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC9BFB2E559B1E004462A0 /* RecorderManager.swift */; };
+		B7BC9BFE2E559B28004462A0 /* StudyChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC9BFD2E559B28004462A0 /* StudyChatView.swift */; };
+		B7BC9C032E559B4B004462A0 /* ziyiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC9C022E559B4B004462A0 /* ziyiApp.swift */; };
+		B7BC9C042E559B5A004462A0 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BC9C032E559B5A004462A0 /* Config.swift */; };
+		B7FAFCF42E5849D40093ABCC /* WCBridgePhone.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FAFCF32E5849D40093ABCC /* WCBridgePhone.swift */; };
+		B7FAFDA82E58618C0093ABCC /* ziyiWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B7FAFD882E58618B0093ABCC /* ziyiWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B78FD8B72E53E4BA00D9A3F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B78FD8A12E53E4B900D9A3F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B78FD8A82E53E4B900D9A3F8;
+			remoteInfo = ziyi;
+		};
+		B78FD8C12E53E4BA00D9A3F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B78FD8A12E53E4B900D9A3F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B78FD8A82E53E4B900D9A3F8;
+			remoteInfo = ziyi;
+		};
+		B7FAFD952E58618C0093ABCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B78FD8A12E53E4B900D9A3F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7FAFD872E58618B0093ABCC;
+			remoteInfo = "ziyiWatch Watch App";
+		};
+		B7FAFD9F2E58618C0093ABCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B78FD8A12E53E4B900D9A3F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7FAFD872E58618B0093ABCC;
+			remoteInfo = "ziyiWatch Watch App";
+		};
+		B7FAFDA62E58618C0093ABCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B78FD8A12E53E4B900D9A3F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7FAFD872E58618B0093ABCC;
+			remoteInfo = "ziyiWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B7FAFD7D2E585F1C0093ABCC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B7FAFDA82E58618C0093ABCC /* ziyiWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B78FD8A92E53E4B900D9A3F8 /* ziyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ziyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78FD8B62E53E4BA00D9A3F8 /* ziyiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ziyiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78FD8C02E53E4BA00D9A3F8 /* ziyiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ziyiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7BC9BEF2E559AAA004462A0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B7BC9BF12E559AE8004462A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7BC9BF32E559AF4004462A0 /* ClassModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClassModeView.swift; path = ClassroomArchive/ClassModeView.swift; sourceTree = "<group>"; };
+		B7BC9BF52E559B01004462A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B7BC9BF72E559B0B004462A0 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B7BC9BF92E559B15004462A0 /* NotesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesAPI.swift; sourceTree = "<group>"; };
+		B7BC9BFB2E559B1E004462A0 /* RecorderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecorderManager.swift; path = ClassroomArchive/RecorderManager.swift; sourceTree = "<group>"; };
+		B7BC9BFD2E559B28004462A0 /* StudyChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StudyChatView.swift; path = ClassroomArchive/StudyChatView.swift; sourceTree = "<group>"; };
+		B7BC9C022E559B4B004462A0 /* ziyiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ziyiApp.swift; sourceTree = "<group>"; };
+		B7BC9C032E559B5A004462A0 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		B7FAFCF32E5849D40093ABCC /* WCBridgePhone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WCBridgePhone.swift; sourceTree = "<group>"; };
+		B7FAFD882E58618B0093ABCC /* ziyiWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ziyiWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FAFD942E58618C0093ABCC /* ziyiWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ziyiWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FAFD9E2E58618C0093ABCC /* ziyiWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ziyiWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B78FD8B92E53E4BA00D9A3F8 /* ziyiTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ziyiTests;
+			sourceTree = "<group>";
+		};
+		B78FD8C32E53E4BA00D9A3F8 /* ziyiUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ziyiUITests;
+			sourceTree = "<group>";
+		};
+		B7FAFD892E58618B0093ABCC /* ziyiWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ziyiWatch Watch App";
+			sourceTree = "<group>";
+		};
+		B7FAFD972E58618C0093ABCC /* ziyiWatch Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ziyiWatch Watch AppTests";
+			sourceTree = "<group>";
+		};
+		B7FAFDA12E58618C0093ABCC /* ziyiWatch Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "ziyiWatch Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B78FD8A62E53E4B900D9A3F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78FD8B32E53E4BA00D9A3F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78FD8BD2E53E4BA00D9A3F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FAFD852E58618B0093ABCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FAFD912E58618C0093ABCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FAFD9B2E58618C0093ABCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B78FD8A02E53E4B900D9A3F8 = {
+			isa = PBXGroup;
+			children = (
+				B7FAFCF32E5849D40093ABCC /* WCBridgePhone.swift */,
+				B7BC9C022E559B4B004462A0 /* ziyiApp.swift */,
+				B7BC9BFD2E559B28004462A0 /* StudyChatView.swift */,
+				B7BC9BFB2E559B1E004462A0 /* RecorderManager.swift */,
+				B7BC9BF92E559B15004462A0 /* NotesAPI.swift */,
+				B7BC9BF72E559B0B004462A0 /* Models.swift */,
+				B7BC9BF52E559B01004462A0 /* ContentView.swift */,
+				B7BC9BF32E559AF4004462A0 /* ClassModeView.swift */,
+				B7BC9BF12E559AE8004462A0 /* Assets.xcassets */,
+				B7BC9BEF2E559AAA004462A0 /* APIClient.swift */,
+				B7BC9C032E559B5A004462A0 /* Config.swift */,
+				B78FD8B92E53E4BA00D9A3F8 /* ziyiTests */,
+				B78FD8C32E53E4BA00D9A3F8 /* ziyiUITests */,
+				B7FAFD892E58618B0093ABCC /* ziyiWatch Watch App */,
+				B7FAFD972E58618C0093ABCC /* ziyiWatch Watch AppTests */,
+				B7FAFDA12E58618C0093ABCC /* ziyiWatch Watch AppUITests */,
+				B78FD8AA2E53E4B900D9A3F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B78FD8AA2E53E4B900D9A3F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B78FD8A92E53E4B900D9A3F8 /* ziyi.app */,
+				B78FD8B62E53E4BA00D9A3F8 /* ziyiTests.xctest */,
+				B78FD8C02E53E4BA00D9A3F8 /* ziyiUITests.xctest */,
+				B7FAFD882E58618B0093ABCC /* ziyiWatch Watch App.app */,
+				B7FAFD942E58618C0093ABCC /* ziyiWatch Watch AppTests.xctest */,
+				B7FAFD9E2E58618C0093ABCC /* ziyiWatch Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B78FD8A82E53E4B900D9A3F8 /* ziyi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B78FD8CA2E53E4BA00D9A3F8 /* Build configuration list for PBXNativeTarget "ziyi" */;
+			buildPhases = (
+				B78FD8A52E53E4B900D9A3F8 /* Sources */,
+				B78FD8A62E53E4B900D9A3F8 /* Frameworks */,
+				B78FD8A72E53E4B900D9A3F8 /* Resources */,
+				B7FAFD7D2E585F1C0093ABCC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7FAFDA72E58618C0093ABCC /* PBXTargetDependency */,
+			);
+			name = ziyi;
+			packageProductDependencies = (
+			);
+			productName = ziyi;
+			productReference = B78FD8A92E53E4B900D9A3F8 /* ziyi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B78FD8B52E53E4BA00D9A3F8 /* ziyiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B78FD8CD2E53E4BA00D9A3F8 /* Build configuration list for PBXNativeTarget "ziyiTests" */;
+			buildPhases = (
+				B78FD8B22E53E4BA00D9A3F8 /* Sources */,
+				B78FD8B32E53E4BA00D9A3F8 /* Frameworks */,
+				B78FD8B42E53E4BA00D9A3F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B78FD8B82E53E4BA00D9A3F8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B78FD8B92E53E4BA00D9A3F8 /* ziyiTests */,
+			);
+			name = ziyiTests;
+			packageProductDependencies = (
+			);
+			productName = ziyiTests;
+			productReference = B78FD8B62E53E4BA00D9A3F8 /* ziyiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B78FD8BF2E53E4BA00D9A3F8 /* ziyiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B78FD8D02E53E4BA00D9A3F8 /* Build configuration list for PBXNativeTarget "ziyiUITests" */;
+			buildPhases = (
+				B78FD8BC2E53E4BA00D9A3F8 /* Sources */,
+				B78FD8BD2E53E4BA00D9A3F8 /* Frameworks */,
+				B78FD8BE2E53E4BA00D9A3F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B78FD8C22E53E4BA00D9A3F8 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B78FD8C32E53E4BA00D9A3F8 /* ziyiUITests */,
+			);
+			name = ziyiUITests;
+			packageProductDependencies = (
+			);
+			productName = ziyiUITests;
+			productReference = B78FD8C02E53E4BA00D9A3F8 /* ziyiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B7FAFD872E58618B0093ABCC /* ziyiWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FAFDA92E58618C0093ABCC /* Build configuration list for PBXNativeTarget "ziyiWatch Watch App" */;
+			buildPhases = (
+				B7FAFD842E58618B0093ABCC /* Sources */,
+				B7FAFD852E58618B0093ABCC /* Frameworks */,
+				B7FAFD862E58618B0093ABCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B7FAFD892E58618B0093ABCC /* ziyiWatch Watch App */,
+			);
+			name = "ziyiWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "ziyiWatch Watch App";
+			productReference = B7FAFD882E58618B0093ABCC /* ziyiWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7FAFD932E58618C0093ABCC /* ziyiWatch Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FAFDAC2E58618C0093ABCC /* Build configuration list for PBXNativeTarget "ziyiWatch Watch AppTests" */;
+			buildPhases = (
+				B7FAFD902E58618C0093ABCC /* Sources */,
+				B7FAFD912E58618C0093ABCC /* Frameworks */,
+				B7FAFD922E58618C0093ABCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7FAFD962E58618C0093ABCC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B7FAFD972E58618C0093ABCC /* ziyiWatch Watch AppTests */,
+			);
+			name = "ziyiWatch Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "ziyiWatch Watch AppTests";
+			productReference = B7FAFD942E58618C0093ABCC /* ziyiWatch Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7FAFD9D2E58618C0093ABCC /* ziyiWatch Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FAFDAF2E58618C0093ABCC /* Build configuration list for PBXNativeTarget "ziyiWatch Watch AppUITests" */;
+			buildPhases = (
+				B7FAFD9A2E58618C0093ABCC /* Sources */,
+				B7FAFD9B2E58618C0093ABCC /* Frameworks */,
+				B7FAFD9C2E58618C0093ABCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7FAFDA02E58618C0093ABCC /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				B7FAFDA12E58618C0093ABCC /* ziyiWatch Watch AppUITests */,
+			);
+			name = "ziyiWatch Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "ziyiWatch Watch AppUITests";
+			productReference = B7FAFD9E2E58618C0093ABCC /* ziyiWatch Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B78FD8A12E53E4B900D9A3F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					B78FD8A82E53E4B900D9A3F8 = {
+						CreatedOnToolsVersion = 16.4;
+						LastSwiftMigration = 1640;
+					};
+					B78FD8B52E53E4BA00D9A3F8 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = B78FD8A82E53E4B900D9A3F8;
+					};
+					B78FD8BF2E53E4BA00D9A3F8 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = B78FD8A82E53E4B900D9A3F8;
+					};
+					B7FAFD872E58618B0093ABCC = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					B7FAFD932E58618C0093ABCC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = B7FAFD872E58618B0093ABCC;
+					};
+					B7FAFD9D2E58618C0093ABCC = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = B7FAFD872E58618B0093ABCC;
+					};
+				};
+			};
+			buildConfigurationList = B78FD8A42E53E4B900D9A3F8 /* Build configuration list for PBXProject "ziyi" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B78FD8A02E53E4B900D9A3F8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B78FD8AA2E53E4B900D9A3F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B78FD8A82E53E4B900D9A3F8 /* ziyi */,
+				B78FD8B52E53E4BA00D9A3F8 /* ziyiTests */,
+				B78FD8BF2E53E4BA00D9A3F8 /* ziyiUITests */,
+				B7FAFD872E58618B0093ABCC /* ziyiWatch Watch App */,
+				B7FAFD932E58618C0093ABCC /* ziyiWatch Watch AppTests */,
+				B7FAFD9D2E58618C0093ABCC /* ziyiWatch Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B78FD8A72E53E4B900D9A3F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7BC9BF22E559AE8004462A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78FD8B42E53E4BA00D9A3F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78FD8BE2E53E4BA00D9A3F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FAFD862E58618B0093ABCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FAFD922E58618C0093ABCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FAFD9C2E58618C0093ABCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B78FD8A52E53E4B900D9A3F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7BC9BF42E559AF4004462A0 /* ClassModeView.swift in Sources */,
+				B7BC9BFE2E559B28004462A0 /* StudyChatView.swift in Sources */,
+				B7BC9BFC2E559B1E004462A0 /* RecorderManager.swift in Sources */,
+				B7BC9BFA2E559B15004462A0 /* NotesAPI.swift in Sources */,
+				B7BC9BF02E559AAA004462A0 /* APIClient.swift in Sources */,
+				B7FAFCF42E5849D40093ABCC /* WCBridgePhone.swift in Sources */,
+				B7BC9C042E559B5A004462A0 /* Config.swift in Sources */,
+				B7BC9BF62E559B01004462A0 /* ContentView.swift in Sources */,
+				B7BC9C032E559B4B004462A0 /* ziyiApp.swift in Sources */,
+				B7BC9BF82E559B0B004462A0 /* Models.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78FD8B22E53E4BA00D9A3F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B78FD8BC2E53E4BA00D9A3F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FAFD842E58618B0093ABCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FAFD902E58618C0093ABCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FAFD9A2E58618C0093ABCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B78FD8B82E53E4BA00D9A3F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B78FD8A82E53E4B900D9A3F8 /* ziyi */;
+			targetProxy = B78FD8B72E53E4BA00D9A3F8 /* PBXContainerItemProxy */;
+		};
+		B78FD8C22E53E4BA00D9A3F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B78FD8A82E53E4B900D9A3F8 /* ziyi */;
+			targetProxy = B78FD8C12E53E4BA00D9A3F8 /* PBXContainerItemProxy */;
+		};
+		B7FAFD962E58618C0093ABCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7FAFD872E58618B0093ABCC /* ziyiWatch Watch App */;
+			targetProxy = B7FAFD952E58618C0093ABCC /* PBXContainerItemProxy */;
+		};
+		B7FAFDA02E58618C0093ABCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7FAFD872E58618B0093ABCC /* ziyiWatch Watch App */;
+			targetProxy = B7FAFD9F2E58618C0093ABCC /* PBXContainerItemProxy */;
+		};
+		B7FAFDA72E58618C0093ABCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7FAFD872E58618B0093ABCC /* ziyiWatch Watch App */;
+			targetProxy = B7FAFDA62E58618C0093ABCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B78FD8C82E53E4BA00D9A3F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B78FD8C92E53E4BA00D9A3F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B78FD8CB2E53E4BA00D9A3F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shichang.ziyi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B78FD8CC2E53E4BA00D9A3F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shichang.ziyi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B78FD8CE2E53E4BA00D9A3F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shichang.ziyiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ziyi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ziyi";
+			};
+			name = Debug;
+		};
+		B78FD8CF2E53E4BA00D9A3F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shichang.ziyiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ziyi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ziyi";
+			};
+			name = Release;
+		};
+		B78FD8D12E53E4BA00D9A3F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shichang.ziyiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ziyi;
+			};
+			name = Debug;
+		};
+		B78FD8D22E53E4BA00D9A3F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shichang.ziyiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ziyi;
+			};
+			name = Release;
+		};
+		B7FAFDAA2E58618C0093ABCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ziyiWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.shichang.ziyi;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shichang.ziyi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		B7FAFDAB2E58618C0093ABCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ziyiWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.shichang.ziyi;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shichang.ziyi.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		B7FAFDAD2E58618C0093ABCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shichang.ziyiWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ziyiWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ziyiWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		B7FAFDAE2E58618C0093ABCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shichang.ziyiWatch-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ziyiWatch Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ziyiWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		B7FAFDB02E58618C0093ABCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shichang.ziyiWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ziyiWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		B7FAFDB12E58618C0093ABCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LNYPM4825T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shichang.ziyiWatch-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ziyiWatch Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B78FD8A42E53E4B900D9A3F8 /* Build configuration list for PBXProject "ziyi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78FD8C82E53E4BA00D9A3F8 /* Debug */,
+				B78FD8C92E53E4BA00D9A3F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B78FD8CA2E53E4BA00D9A3F8 /* Build configuration list for PBXNativeTarget "ziyi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78FD8CB2E53E4BA00D9A3F8 /* Debug */,
+				B78FD8CC2E53E4BA00D9A3F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B78FD8CD2E53E4BA00D9A3F8 /* Build configuration list for PBXNativeTarget "ziyiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78FD8CE2E53E4BA00D9A3F8 /* Debug */,
+				B78FD8CF2E53E4BA00D9A3F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B78FD8D02E53E4BA00D9A3F8 /* Build configuration list for PBXNativeTarget "ziyiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78FD8D12E53E4BA00D9A3F8 /* Debug */,
+				B78FD8D22E53E4BA00D9A3F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7FAFDA92E58618C0093ABCC /* Build configuration list for PBXNativeTarget "ziyiWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FAFDAA2E58618C0093ABCC /* Debug */,
+				B7FAFDAB2E58618C0093ABCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7FAFDAC2E58618C0093ABCC /* Build configuration list for PBXNativeTarget "ziyiWatch Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FAFDAD2E58618C0093ABCC /* Debug */,
+				B7FAFDAE2E58618C0093ABCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7FAFDAF2E58618C0093ABCC /* Build configuration list for PBXNativeTarget "ziyiWatch Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FAFDB02E58618C0093ABCC /* Debug */,
+				B7FAFDB12E58618C0093ABCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B78FD8A12E53E4B900D9A3F8 /* Project object */;
+}

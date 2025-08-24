@@ -1,0 +1,8 @@
+我将贴上多个片段的 JSONL（每行一个对象）。
+请合并去重并输出一个 JSON：
+{
+  "outline": [ { "title": "...", "subtopics": ["..."], "chunk_ids": ["..."] } ],
+  "glossary": [ { "term": "...", "brief": "≤30字" } ],
+  "topics": ["整体主题1","整体主题2"]
+}
+规则：根据 title/bullets/topics 归类；保留 chunk_ids 以便追溯；只返回 JSON。
